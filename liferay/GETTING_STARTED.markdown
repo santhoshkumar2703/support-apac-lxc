@@ -145,6 +145,18 @@ prod, and uat. The default value is `local`.
 Set this to true to append metadata for the current environment settings and
 timestamp. The default value is `false`.
 
+#### liferay.workspace.dir.excludes.globs
+Set a list of glob patterns to exclude from the build lifecycle. All glob
+patterns start relative to the workspace root directory.
+
+Examples:
+```
+liferay.workspace.dir.excludes.globs=\
+	**/some-wip-project,\
+	dependencies/**,\
+	modules/**/*-test
+```
+
 #### liferay.workspace.docker.local.registry.address
 Set this to the host and port of the local Docker registry. This will enable the user to interact with a Docker registry other than DockerHub (e.g. myregistryaddress.org:5000).
 
