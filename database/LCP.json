@@ -41,7 +41,7 @@
   },
   "environments": {
     "infra": {
-      "deploy": false
+      "deploy": true
     }
   }
 }
